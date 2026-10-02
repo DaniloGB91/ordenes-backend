@@ -1,62 +1,54 @@
 # Pedidos360Front
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.7.
+Este proyecto fue generado usando [Angular CLI](https://github.com/angular/angular-cli) versión 22.1.7.
 
-## Development server
+## Servidor de desarrollo
 
-To start a local development server, run:
+Para iniciar un servidor de desarrollo local, ejecuta:
 
-```bash
-ng serve
-```
+`ng serve`
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Una vez que el servidor esté en ejecución, abre tu navegador y dirígete a `http://localhost:4200/`. La aplicación se recargará automáticamente cada vez que modifiques alguno de los archivos fuente.
 
-## Code scaffolding
+## Generación de código
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Para generar un nuevo componente, ejecuta:
 
-```bash
-ng generate component component-name
-```
+`ng generate component nombre-del-componente`
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Construcción (Build)
 
-```bash
-ng generate --help
-```
+Para compilar el proyecto ejecuta:
 
-## Building
+`ng build`
 
-To build the project run:
+Esto compilará tu proyecto y guardará los archivos resultantes en el directorio `dist/`.
 
-```bash
-ng build
-```
+# Pedidos360Front
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Este proyecto fue generado usando [Angular CLI](https://github.com/angular/angular-cli) versión 22.1.7.
 
-## Running unit tests
+## Servidor de desarrollo
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Para iniciar un servidor de desarrollo local, ejecuta:
 
-```bash
-ng test
-```
+`ng serve`
 
-## Running end-to-end tests
+Una vez que el servidor esté en ejecución, abre tu navegador y dirígete a `http://localhost:4200/`. La aplicación se recargará automáticamente cada vez que modifiques alguno de los archivos fuente.
 
-For end-to-end (e2e) testing, run:
+## Generación de código
 
-```bash
-ng e2e
-```
+Para generar un nuevo componente, ejecuta:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+`ng generate component nombre-del-componente`
 
-## Additional Resources
+## Construcción (Build)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para compilar el proyecto ejecuta:
+
+`ng build`
+
+Esto compilará tu proyecto y guardará los archivos resultantes en el directorio `dist/`.
 
 # Backend - Sistema de Pedidos e Inventario (Cloud Native)
 
