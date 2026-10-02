@@ -1,6 +1,26 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { App } from './app/app';
+import { provideHttpClient } from '@angular/common/http';
+import { Amplify } from 'aws-amplify';
 
-bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+Amplify.configure({
+  Auth: {
+    Cognito: {
+      userPoolId: 'us-east-1_M2vrPlITD',
+      userPoolClientId: 'dga3ns8ds4n8s85cjn9h28vrq',
+      loginWith: {
+        oauth: {
+          domain: 'us-east-1mznmpbftd.auth.us-east-1.amazoncognito.com', 
+          scopes: ['openid', 'email', 'profile', 'Ordenes91-api/pedidos'],
+          redirectSignIn: ['https://staging.d1xa67u187dkb7.amplifyapp.com'], 
+          redirectSignOut: ['https://staging.d1xa67u187dkb7.amplifyapp.com'], 
+          responseType: 'code'
+        }
+      }
+    }
+  }
+});
+
+bootstrapApplication(App, {
+  providers: [provideHttpClient()]
+}).catch(err => console.error(err));
