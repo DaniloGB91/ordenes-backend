@@ -57,3 +57,18 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+# Backend - Sistema de Pedidos e Inventario (Cloud Native)
+
+Backend desarrollado en **Java con Spring Boot** para la asignatura de Desarrollo Cloud Native I (DSY1107).
+
+## Tecnologías Utilizadas
+- Java 17 / Spring Boot
+- Base de datos relacional (PostgreSQL)
+- Despliegue en AWS EC2 (Amazon Linux 2023)
+- Seguridad e integración con API Gateway y Amazon Cognito
+
+## Ejecución local
+```bash
+mvn clean install
+java -jar target/OrdenesBackend-0.0.1-SNAPSHOT.jar
